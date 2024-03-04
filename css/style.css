@@ -1,0 +1,74 @@
+/* normalizing */
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: rgb(0, 198, 75);
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    rotate: -35deg;
+    transform-origin: 50% 40%;
+    overflow: hidden;
+    width: 120vw;
+    translate: -10vw;
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 18vh;
+    margin: 0;
+    line-height: 25vw;
+    writing-mode: vertical-lr;
+    color: white;
+}
+
+h2,
+h3 {
+    font-size: 4vw;
+    margin: 0;
+}
+
+h3 {
+    writing-mode: vertical-lr
+}
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+    /* new */
+    translate: 5vw;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    /* flex: 1; */
+    background-color: rgb(0, 198, 75);
+    background-image: url(../imgs/dalle-cow.png);
+    background-blend-mode: multiply;
+    background-position: center top;
+    /* new */
+    min-height: 70vh;
+    padding: 20px 0px 20vh 0px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
